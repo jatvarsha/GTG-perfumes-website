@@ -50,4 +50,4 @@ Built from Figma design specifications with exact pixel measurements and spacing
 
 - Primary Green: `#032E15`
 - Secondary Green: `#016630`
-- Accent Gold: `#F7B32B`
+
