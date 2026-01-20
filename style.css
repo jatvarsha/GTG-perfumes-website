@@ -1,223 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #0b2e1f;
+}
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
-            color: #333;
-            background: #fff;
-        }
-        .hero {
-            height: 721.19px; /* Exact height from image_e33e74 */
-            width: 100%;
-            background-image: url('image/firstimage.png');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-        
+/* ================= HERO ================= */
+.hero {
+  width: 100%;
+  max-width: 1455.66px;
+  height: 794px;
 
+  background-image: url("image/firstimage.png");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 
+  margin: 0 auto;
+  position: relative;
+}
 
-        /* Hero Section - Exact dimensions from Figma */
-        .hero-section {
-            width: 1456.25px;
-            height: 794px;
-            position: relative;
-            top: 1px;
-            left: 0.05px;
-            background: linear-gradient(180deg, #D8E5DC 0%, #E8F0EA 100%);
-            margin: 0 auto;
-        }
+/* ================= NAVBAR ================= */
+.navbar {
+  height: 72.8px;
+  padding: 0 64.72px;
 
-        /* Header - Top part */
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 1326.81px;
-            height: 49px;
-            gap: 32.36px;
-            margin: 0 auto;
-            padding-top: 24px;
-        }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: #032E15;
-            letter-spacing: 0.5px;
-        }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
 
-        .nav-container {
-            display: flex;
-            align-items: center;
-            gap: 32px;
-            flex: 1;
-            justify-content: center;
-        }
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
 
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 32px;
-            align-items: center;
-        }
+.nav-menu {
+  display: flex;
+  gap: 32px;
+}
 
-        .nav-menu a {
-            text-decoration: none;
-            color: #032E15;
-            font-size: 14px;
-            font-weight: 500;
-        }
+.nav-menu a {
+  text-decoration: none;
+  color: #0b2e1f;
+  font-size: 14px;
+}
 
-        .shop-dropdown {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            cursor: pointer;
-        }
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-        .shop-dropdown::after {
-            content: '▾';
-            font-size: 10px;
-            color: #032E15;
-        }
+.btn {
+  background: #0b3d2e;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 24px;
+  cursor: pointer;
+}
 
-        .header-actions {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
+/* ================= HERO CONTENT ================= */
+.hero-content {
+  position: absolute;
+  top: 177.5px;
+  left: 74px;
 
-        .search-icon {
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-        }
+  width: 692px;
+  height: 344px;
 
-        .shop-now-btn {
-            background: #016630;
-            color: #fff;
-            padding: 10px 24px;
-            border-radius: 24px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            border: none;
-            cursor: pointer;
-        }
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
 
-        /* Hero Content - Live your best life section */
-        .hero-content {
-            width: 692px;
-            height: 344px;
-            position: absolute;
-            top: 177.5px;
-            left: 74px;
-            display: flex;
-            flex-direction: column;
-            gap: 36px;
-        }
+/* Badge */
+.hero-badge {
+  background: rgba(11, 61, 46, 0.15);
+  padding: 8px 18px;
+  border-radius: 20px;
+  width: fit-content;
+  font-size: 14px;
+}
 
-        .sustainability-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(1, 102, 48, 0.15);
-            color: #032E15;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            width: fit-content;
-        }
+/* Heading */
+.hero-content h1 {
+  font-size: 56px;
+  line-height: 1.1;
+}
 
-        .sustainability-badge::before {
-            content: '🥇';
-            font-size: 14px;
-        }
+/* Stats */
+.hero-stats {
+  display: flex;
+  gap: 48px;
+}
 
-        .hero-heading {
-            font-size: 64px;
-            font-weight: 700;
-            color: #032E15;
-            line-height: 1.1;
-        }
+.hero-stat h2 {
+  font-size: 48px;
+  color: #1f6b44;
+}
 
-        .hero-stats {
-            display: flex;
-            gap: 40px;
-        }
+.hero-stat p {
+  font-size: 14px;
+  opacity: 0.7;
+}
 
-        .stat-item {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .stat-number {
-            font-size: 48px;
-            font-weight: 700;
-            color: #032E15;
-            line-height: 1;
-        }
-
-        .stat-number.highlight {
-            color: #032E15;
-            text-decoration: underline;
-            
-            text-decoration-thickness: 4px;
-            text-underline-offset: 4px;
-        }
-
-        .stat-label {
-            font-size: 14px;
-            color: #5A7A65;
-            margin-top: 8px;
-        }
-
-        .shop-now-hero {
-            background: #032E15;
-            color: #fff;
-            padding: 14px 32px;
-            border-radius: 24px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            border: none;
-            cursor: pointer;
-            width: fit-content;
-            margin-top: 12px;
-        }
-
-        /* Perfume Image - Right side */
-        .hero-image {
-            position: absolute;
-            right: 120px;
-            top: 160px;
-            width: 400px;
-            height: 500px;
-            background-image: url('YOUR_PERFUME_IMAGE_URL_HERE');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        /* Grass Section at bottom */
-        .grass-section {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 160px;
-            background-image: url('YOUR_GRASS_IMAGE_URL_HERE');
-            background-size: cover;
-            background-position: center;
-        }
+/* Primary Button */
+.primary {
+  width: fit-content;
+}
 
         /* Hamburger - Hidden by default */
         .hamburger {
@@ -279,23 +177,26 @@
         }
 
         .main-image-container {
-            width: 610px;
-            height: 672.99px;
-            position: relative;
-            background: #E8E8E8;
-            border-bottom-right-radius: 15.17px;
-            border-bottom-left-radius: 15.17px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 30px;
-        }
+    position: relative;
+    width: 100%;
+    height: 520px;          /* or your Figma height */
+    background: #f2f2f2;
+    border-radius: 16px;
+    overflow: hidden;      /* VERY IMPORTANT */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
         .main-image {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* 👈 fills frame */
+    object-position: top;     /* 👈 touches top */
+}
+
 
         .arrow-btn {
             position: absolute;
